@@ -1,0 +1,291 @@
+$red: rgb(235, 105, 105);
+$redhover: rgb(255, 179, 179);
+$redselect: rgb(108, 14, 44);
+$yellow: rgb(255, 233, 93);
+$yellowhover:rgb(255, 253, 199);
+$yellowlight:rgb(255, 254, 237);
+$yellowselect:rgb(196, 144, 24);
+$blue: rgba(36, 186, 255, 1);
+$bluehover: rgb(144, 248, 255);
+$blueselect: rgb(19, 69, 187);
+$black:rgb(67, 11, 11);
+$blackhover:rgb(99, 29, 64);
+$blackselect:rgb(18, 2, 35);
+$white:rgb(238, 243, 246);
+$whitehover:rgb(176, 175, 180);
+$whiteselect:rgb(255, 255, 255);
+$purple:rgba(216, 125, 219, 1);
+html{
+    margin: 0;
+    padding: 0;
+
+}
+#app{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'simple-kind-of-girl','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background:$purple;
+    background:linear-gradient(0deg,rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    color:$black ;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+}
+@font-face {
+    font-family: 'simple-kind-of-girl';
+    src:url("./assets/simple-kind-of-girl-font/SimpleKindOfGirl-mnnm.ttf");
+    font-size: xx-large;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Cute-Notebook';
+    src:url("./assets/CuteNotebookPersonalUse-7OAEV.ttf");
+    font-size: xx-large;
+    font-weight: bold;
+}
+.header{
+    background-color: $white;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.headertext{
+    background: $yellow;
+    border-radius: 3px;
+}
+#headerimg{
+    width: 4%;
+    max-width: 4%;
+    max-height: 4%;
+}
+.header-options{
+    border-radius: 5px;
+    padding: 1%;
+    flex: 1 2 2 2 2;
+    height:5%;
+    max-height: 5%;
+    min-height: 5%;
+    gap: 3%;
+    width: 5%;
+    border: none;
+    border-color: none;
+    button{
+        border: none;
+        height: 5%;
+        min-height: 5%;
+        max-height: 5%;
+        border-style: none;
+        font-family: 'simple-kind-of-girl','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 1%;
+        font-size: xx-large;
+        padding-left: 1%;
+        #aboutme{
+            background-color: $yellow;
+            color: $black;
+            :hover{
+                background-color:$yellowhover;
+                color: $blackhover;
+            }
+            :focus{
+                background-color: $yellowselect;
+                color: $blackselect;
+            }
+          }
+          #info{
+            background-color: $red;
+            color: $black;
+            :hover{
+                background-color:$redhover;
+                color: $blackhover;
+            }
+            :focus{
+                background-color: $redselect;
+                color: $blackselect;
+            }
+          }    
+          #pricing{
+            background-color: $blue;
+            color: $black;
+            :hover{
+                background-color:$bluehover;
+                color: $blackhover;
+            }
+            :focus{
+                background-color: $blueselect;
+                color: $blackselect;
+            }
+          }    
+          #home{
+            background-color: $yellow;
+            color: $black;
+            :hover{
+                background-color:$yellowhover;
+                color: $blackhover;
+            }
+            :focus{
+                background-color: $yellowselect;
+                color: $blackselect;
+            }
+          }
+    }
+}
+
+.img-slider{
+    background:$purple; 
+
+}
+.contentbg{
+    background:$purple;
+    background:linear-gradient(0deg,rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin-left:15%;
+    margin-right: 15%;
+    margin-top: 0;
+}
+
+
+.content{
+    width:100%;
+    background-color: $yellowhover;
+    background:$yellowhover;
+    margin-right: 15%;
+    padding: 1%;
+    background-size: 100%;
+    height: 100%;
+    text-align: center;
+}
+ul{
+    text-align: left;
+}
+
+.myheader{
+    font-size: xx-large;
+    font-weight: bold;
+}
+@media (max-width:360px){
+.portrait{
+    max-width: 40%;
+    max-height: auto;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+}
+
+@media (min-width:361px){
+.portrait{
+    max-width: 20%;
+    max-height: auto;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+}
+
+.portraitsection{
+    border-bottom: 5px $redselect;
+    gap: 3%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    
+}
+.title{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: "Cute-Notebook",Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.content1{
+    font-size: smaller;
+    font-family: "simple-kind-of-girl", Arial, Helvetica, sans-serif;
+    background: $yellowlight;
+    background-color: $yellowlight;
+    color: $blueselect;
+
+}
+#title{
+    background-color: $yellow;
+}
+.ourTable{
+    margin:auto;
+    justify-content: center;
+    align-content: center;
+    display: block;
+    width: 50%;
+}
+/* --------------------------------------------   */
+/* Big purple red table with rounded edges        */
+/* --------------------------------------------   */
+.purpleRed table {
+	background-color: #3d3b63;
+	border-collapse: collapse;
+	border-radius: 10px;
+	font-size: 1em;
+	color: $white;
+	overflow: hidden;
+	width: auto;
+	/*max-width: 100%;*/
+    font-family: "simple-kind-of-girl", Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+
+}
+.purpleRed thead {
+	background-color: $redselect;
+    color: $white;
+    font-family: "Cute-Notebook", Arial, Helvetica, sans-serif;
+	border: 3px solid rgba(0, 0, 0, 0.1);
+}
+.purpleRed th {
+	letter-spacing: 0.3px;
+	text-shadow: 0 1px 1px #2b2a466b;
+    color: $white;
+
+}
+.purpleRed td {
+	background-color: $blueselect;
+	color: $white;
+}
+.purpleRed td strong {
+	color: white;
+}
+.purpleRed td,
+.purpleRed th {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 11px;
+}
+/* --------------------------------------------   */
+

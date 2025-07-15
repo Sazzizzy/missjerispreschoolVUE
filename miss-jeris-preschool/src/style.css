@@ -1,79 +1,284 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+html {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.card {
-  padding: 2em;
+  padding: 0;
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "simple-kind-of-girl", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: rgb(216, 125, 219);
+  background: linear-gradient(0deg, rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  color: rgb(67, 11, 11);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "simple-kind-of-girl";
+  src: url("./assets/simple-kind-of-girl-font/SimpleKindOfGirl-mnnm.ttf");
+  font-size: xx-large;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Cute-Notebook";
+  src: url("./assets/CuteNotebookPersonalUse-7OAEV.ttf");
+  font-size: xx-large;
+  font-weight: bold;
+}
+.header {
+  background-color: rgb(238, 243, 246);
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.headertext {
+  background: rgb(255, 233, 93);
+  border-radius: 3px;
+}
+
+#headerimg {
+  width: 4%;
+  max-width: 4%;
+  max-height: 4%;
+}
+
+.header-options {
+  border-radius: 5px;
+  padding: 1%;
+  flex: 1 2 2 2 2;
+  height: 5%;
+  max-height: 5%;
+  min-height: 5%;
+  gap: 3%;
+  width: 5%;
+  border: none;
+  border-color: none;
+}
+.header-options button {
+  border: none;
+  height: 5%;
+  min-height: 5%;
+  max-height: 5%;
+  border-style: none;
+  font-family: "simple-kind-of-girl", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  font-size: xx-large;
+  padding-left: 1%;
+}
+.header-options button #aboutme {
+  background-color: rgb(255, 233, 93);
+  color: rgb(67, 11, 11);
+}
+.header-options button #aboutme :hover {
+  background-color: rgb(255, 253, 199);
+  color: rgb(99, 29, 64);
+}
+.header-options button #aboutme :focus {
+  background-color: rgb(196, 144, 24);
+  color: rgb(18, 2, 35);
+}
+.header-options button #info {
+  background-color: rgb(235, 105, 105);
+  color: rgb(67, 11, 11);
+}
+.header-options button #info :hover {
+  background-color: rgb(255, 179, 179);
+  color: rgb(99, 29, 64);
+}
+.header-options button #info :focus {
+  background-color: rgb(108, 14, 44);
+  color: rgb(18, 2, 35);
+}
+.header-options button #pricing {
+  background-color: rgb(36, 186, 255);
+  color: rgb(67, 11, 11);
+}
+.header-options button #pricing :hover {
+  background-color: rgb(144, 248, 255);
+  color: rgb(99, 29, 64);
+}
+.header-options button #pricing :focus {
+  background-color: rgb(19, 69, 187);
+  color: rgb(18, 2, 35);
+}
+.header-options button #home {
+  background-color: rgb(255, 233, 93);
+  color: rgb(67, 11, 11);
+}
+.header-options button #home :hover {
+  background-color: rgb(255, 253, 199);
+  color: rgb(99, 29, 64);
+}
+.header-options button #home :focus {
+  background-color: rgb(196, 144, 24);
+  color: rgb(18, 2, 35);
+}
+
+.img-slider {
+  background: rgb(216, 125, 219);
+}
+
+.contentbg {
+  background: rgb(216, 125, 219);
+  background: linear-gradient(0deg, rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 0;
+}
+
+.content {
+  width: 100%;
+  background-color: rgb(255, 253, 199);
+  background: rgb(255, 253, 199);
+  margin-right: 15%;
+  padding: 1%;
+  background-size: 100%;
+  height: 100%;
   text-align: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+ul {
+  text-align: left;
+}
+
+.myheader {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@media (max-width: 360px) {
+  .portrait {
+    max-width: 40%;
+    max-height: auto;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }
+@media (min-width: 361px) {
+  .portrait {
+    max-width: 20%;
+    max-height: auto;
+    height: auto;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+.portraitsection {
+  border-bottom: 5px rgb(108, 14, 44);
+  gap: 3%;
+  float: left;
+  justify-content: center;
+  text-align: center;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.title {
+  font-size: larger;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-family: "Cute-Notebook", Arial, Helvetica, sans-serif;
+  justify-content: center;
+  text-align: center;
+}
+
+.content1 {
+  font-size: smaller;
+  font-family: "simple-kind-of-girl", Arial, Helvetica, sans-serif;
+  background: rgb(255, 254, 237);
+  background-color: rgb(255, 254, 237);
+  color: rgb(19, 69, 187);
+}
+
+#title {
+  background-color: rgb(255, 233, 93);
+}
+
+.ourTable {
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  width: 50%;
+}
+
+/* --------------------------------------------   */
+/* Big purple red table with rounded edges        */
+/* --------------------------------------------   */
+.purpleRed table {
+  background-color: #3d3b63;
+  border-collapse: collapse;
+  border-radius: 10px;
+  font-size: 1em;
+  color: rgb(238, 243, 246);
+  overflow: hidden;
+  width: auto;
+  /*max-width: 100%;*/
+  font-family: "simple-kind-of-girl", Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+.purpleRed thead {
+  background-color: rgb(108, 14, 44);
+  color: rgb(238, 243, 246);
+  font-family: "Cute-Notebook", Arial, Helvetica, sans-serif;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.purpleRed th {
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 1px rgba(43, 42, 70, 0.4196078431);
+  color: rgb(238, 243, 246);
+}
+
+.purpleRed td {
+  background-color: rgb(19, 69, 187);
+  color: rgb(238, 243, 246);
+}
+
+.purpleRed td strong {
+  color: white;
+}
+
+.purpleRed td,
+.purpleRed th {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 11px;
+}
+
+/* --------------------------------------------   */
+
+/*# sourceMappingURL=style.css.map */
