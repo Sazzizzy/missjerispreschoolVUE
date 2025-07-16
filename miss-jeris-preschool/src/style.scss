@@ -1,45 +1,223 @@
+$white: rgb(249, 246, 244);
 $red: rgb(235, 105, 105);
-$redhover: rgb(255, 179, 179);
-$redselect: rgb(108, 14, 44);
-$yellow: rgb(255, 233, 93);
-$yellowhover:rgb(255, 253, 199);
-$yellowlight:rgb(255, 254, 237);
-$yellowselect:rgb(196, 144, 24);
-$blue: rgba(36, 186, 255, 1);
-$bluehover: rgb(144, 248, 255);
-$blueselect: rgb(19, 69, 187);
-$black:rgb(67, 11, 11);
-$blackhover:rgb(99, 29, 64);
-$blackselect:rgb(18, 2, 35);
-$white:rgb(238, 243, 246);
-$whitehover:rgb(176, 175, 180);
-$whiteselect:rgb(255, 255, 255);
-$purple:rgba(216, 125, 219, 1);
+$darkblue: rgb(9, 6, 86);
+$slightlylessdarkblue:  rgb(44, 39, 170);
+$blue:rgb(131, 216, 255);
+$redish:rgb(255, 161, 161);
+$redselect: rgb(137, 3, 3);
+$yellow: rgb(255, 250, 215);
 html{
+    background-color: $white;
     margin: 0;
     padding: 0;
-
+    font-family: 'simple-kind-of-girl', "Gill Sans", sans-serif;
+    overflow-x: hidden;
+}   
+.contactsection{
+    background-color: $redish;
+    color:$darkblue;
+    width: fit-content;
+    margin: auto;
+    padding: 3%;
+    border-radius: 5px;
 }
-#app{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: 'simple-kind-of-girl','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    background:$purple;
-    background:linear-gradient(0deg,rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    color:$black ;
+.ourHeader{
+    font-family: 'Cute-Notebook', "Gill Sans", sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    overflow-x:hidden;
+    gap: 3%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+    height: fit-content;
+}
+
+.colorBlockBlue{
     display: flex;
     flex-direction: column;
+    background-color: $blue;
+    width: 100%;
+    color: $darkblue;
+    padding: 5%;
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding-right: 2%;
+
 }
+.colorBlockBlueabout{
+    display: flex;
+    flex-direction: column;
+    background-color: $blue;
+    width: 100%;
+    color: $darkblue;
+    padding: 5%;
+    margin: 0;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+.mybutton{
+    border: solid 1px $darkblue;
+    color: $darkblue;
+    background-color: $red;
+    padding: 1%;
+    font-family: 'Cute-Notebook', "Gill Sans", sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+.mybutton:hover{
+    color: $slightlylessdarkblue;
+    background-color: $redish;
+    text-decoration: none;
+}
+.contentHeaders{
+    width:fit-content;
+    font-size: xx-large;
+    color: $darkblue;
+    border-radius: 5px;
+    border-bottom: 3px dotted $darkblue;
+    align-content: center;
+    padding: 1%;
+    margin: 0;
+    text-align: center;
+    font-family: 'Cute-Notebook', "Gill Sans", sans-serif;
+}
+.aboutmesection{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    width: 100%;
+    max-width: 100%;
+    gap: 4%;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 5%;
+}
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    width: fit-content;
+    max-width: fit-content;
+    vertical-align: top;
+    text-align: left;
+}
+
+.portrait{
+    align-content: space-between;
+    width: 30%;
+    max-width: 30%;
+    max-height: auto;
+    border-radius: 40px;
+    display: block;
+}
+.pad{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 3%;
+}
+.headerlinks{
+    text-decoration: none;
+}
+span .headerlinks{
+    color: $white;
+    border-bottom: 3px dotted $white;
+    font-family: 'simple-kind-of-girl', "Gill Sans", sans-serif;
+}
+@media (max-width: 375px){
+    .headerlogo{
+        width: 50%;
+        max-width: 50%;
+        max-height: 50%;
+        margin: auto;
+        display: block;
+    }
+    .aboutme .contentHeaders{
+        font-family: 'simple-kind-of-girl', "Gill Sans", sans-serif;
+        text-align: right;
+        flex-wrap: wrap;
+        font-size: x-large;
+        align-items: left;
+        align-self: left;
+        align-content: left;
+        color: $redselect;
+        text-shadow: 3px $redish;
+        padding-top: 5%;
+        align-self:flex-start;
+    }
+    .myFooter{
+        position:fixed;
+        background-color: $darkblue;
+        color: $white;
+        width:100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'Cute-Notebook', "Gill Sans", sans-serif;
+        margin: 0;
+        font-size: small;
+        left:-1px;
+        gap: 3%;
+        bottom: -1px;
+        margin-top: auto;
+    }
+    ul{
+    }
+}
+@media (min-width: 376px) {
+    .headerlogo{
+    width: 20%;
+    max-width: 20%;
+    max-height: 20%;
+    margin: auto;
+    display: block;
+    }
+    .aboutme .contentHeaders{
+    font-family: 'simple-kind-of-girl', "Gill Sans", sans-serif;
+    text-align: right;
+    align-items: left;
+    align-self: left;
+    align-content: left;
+    color: $redselect;
+    text-shadow: 3px $redish;
+    padding-top: 5%;
+    align-self:flex-start;
+}
+.myFooter{
+    position:absolute;
+    background-color: $darkblue;
+    color: $white;
+    width:100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Cute-Notebook', "Gill Sans", sans-serif;
+    margin: 0;
+    font-size: x-large;
+    left:-1px;
+    gap: 3%;
+    }
+    ul{
+    margin-left: 25%;
+    margin-right: 25%;
+    }       
+}
+//Fonts: 
 @font-face {
     font-family: 'simple-kind-of-girl';
     src:url("./assets/simple-kind-of-girl-font/SimpleKindOfGirl-mnnm.ttf");
@@ -52,199 +230,8 @@ body{
     font-size: xx-large;
     font-weight: bold;
 }
-.header{
-    background-color: $white;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-}
-.headertext{
-    background: $yellow;
-    border-radius: 3px;
-}
-#headerimg{
-    width: 4%;
-    max-width: 4%;
-    max-height: 4%;
-}
-.header-options{
-    border-radius: 5px;
-    padding: 1%;
-    flex: 1 2 2 2 2;
-    height:5%;
-    max-height: 5%;
-    min-height: 5%;
-    gap: 3%;
-    width: 5%;
-    border: none;
-    border-color: none;
-    button{
-        border: none;
-        height: 5%;
-        min-height: 5%;
-        max-height: 5%;
-        border-style: none;
-        font-family: 'simple-kind-of-girl','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-right: 1%;
-        font-size: xx-large;
-        padding-left: 1%;
-        #aboutme{
-            background-color: $yellow;
-            color: $black;
-            :hover{
-                background-color:$yellowhover;
-                color: $blackhover;
-            }
-            :focus{
-                background-color: $yellowselect;
-                color: $blackselect;
-            }
-          }
-          #info{
-            background-color: $red;
-            color: $black;
-            :hover{
-                background-color:$redhover;
-                color: $blackhover;
-            }
-            :focus{
-                background-color: $redselect;
-                color: $blackselect;
-            }
-          }    
-          #pricing{
-            background-color: $blue;
-            color: $black;
-            :hover{
-                background-color:$bluehover;
-                color: $blackhover;
-            }
-            :focus{
-                background-color: $blueselect;
-                color: $blackselect;
-            }
-          }    
-          #home{
-            background-color: $yellow;
-            color: $black;
-            :hover{
-                background-color:$yellowhover;
-                color: $blackhover;
-            }
-            :focus{
-                background-color: $yellowselect;
-                color: $blackselect;
-            }
-          }
-    }
-}
+//---------------------------------------------------------
 
-.img-slider{
-    background:$purple; 
-
-}
-.contentbg{
-    background:$purple;
-    background:linear-gradient(0deg,rgb(235, 105, 105) 24%, rgb(216, 125, 219) 47%, rgb(36, 186, 255) 72%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    margin-left:15%;
-    margin-right: 15%;
-    margin-top: 0;
-}
-
-
-.content{
-    width:100%;
-    background-color: $yellowhover;
-    background:$yellowhover;
-    margin-right: 15%;
-    padding: 1%;
-    background-size: 100%;
-    height: 100%;
-    text-align: center;
-}
-ul{
-    text-align: left;
-}
-
-.myheader{
-    font-size: xx-large;
-    font-weight: bold;
-}
-@media (max-width:360px){
-.portrait{
-    max-width: 40%;
-    max-height: auto;
-    height: auto;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
-}
-}
-
-@media (min-width:361px){
-.portrait{
-    max-width: 20%;
-    max-height: auto;
-    height: auto;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
-}
-}
-
-.portraitsection{
-    border-bottom: 5px $redselect;
-    gap: 3%;
-    float: left;
-    justify-content: center;
-    text-align: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    
-}
-.title{
-    font-size: larger;
-    font-weight: bolder;
-    text-decoration: underline;
-    font-family: "Cute-Notebook",Arial, Helvetica, sans-serif;
-    justify-content: center;
-    text-align: center;
-}
-.content1{
-    font-size: smaller;
-    font-family: "simple-kind-of-girl", Arial, Helvetica, sans-serif;
-    background: $yellowlight;
-    background-color: $yellowlight;
-    color: $blueselect;
-
-}
-#title{
-    background-color: $yellow;
-}
-.ourTable{
-    margin:auto;
-    justify-content: center;
-    align-content: center;
-    display: block;
-    width: 50%;
-}
 /* --------------------------------------------   */
 /* Big purple red table with rounded edges        */
 /* --------------------------------------------   */
@@ -276,8 +263,8 @@ ul{
 
 }
 .purpleRed td {
-	background-color: $blueselect;
-	color: $white;
+	background-color: $yellow;
+	color: $redselect;
 }
 .purpleRed td strong {
 	color: white;
@@ -288,4 +275,3 @@ ul{
 	padding: 11px;
 }
 /* --------------------------------------------   */
-
